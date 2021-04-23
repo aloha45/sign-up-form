@@ -1,4 +1,4 @@
-import { useField } from "formik";
+import { useField } from "../../frontend/build/node_modules/formik/dist";
 
 export const TextInput = ({ label, ...props }) => {
 	const [field, meta] = useField(props);

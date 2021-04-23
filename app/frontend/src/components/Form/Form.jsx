@@ -1,6 +1,6 @@
 import React from "react";
-import { Formik, Form } from "formik";
-import * as Yup from "yup";
+import { Formik, Form } from "../../../frontend/build/node_modules/formik/dist";
+import * as Yup from "../../../frontend/build/node_modules/yup/lib";
 import * as Fields from "./fields";
 import * as Inputs from "./inputs";
 // import axios from "axios";

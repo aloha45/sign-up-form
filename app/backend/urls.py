@@ -15,13 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import url
 from rest_framework import routers
-from form import views
+from form.views import FrontEndAppView
 
-router = routers.DefaultRouter()
-router.register(r'forms', views.FormView, 'form')
+# router = routers.DefaultRouter()
+# router.register(r'forms', views.FormView, 'form')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls))
+    path('form', check_url),
+    # path('api/', include(router.urls)),
+    url(r'^', FrontEndAppView.as_view())
 ]

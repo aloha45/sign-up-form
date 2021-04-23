@@ -1,7 +1,7 @@
 import React from "react";
-import { Formik, Form } from "formik";
+import { Formik, Form } from "../../../frontend/build/node_modules/formik/dist";
 import "./MentorForm.css";
-import * as Yup from "yup";
+import * as Yup from "../../../frontend/build/node_modules/yup/lib";
 import * as Fields from "../fields";
 import * as Inputs from "../inputs";
 
